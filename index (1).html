@@ -3,25 +3,6 @@
 <head>
   <title>Plus One Class Hub</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function countWorkingDaysUntilMarchEnd() {
-      const today = new Date();
-      const end = new Date(today.getFullYear(), 2, 31); // March 31
-
-      let count = 0;
-      let current = new Date(today);
-
-      while (current <= end) {
-        const day = current.getDay();
-        if (day !== 0 && day !== 6) count++; // Skip Sunday (0) and Saturday (6)
-        current.setDate(current.getDate() + 1);
-      }
-
-      document.getElementById("countdown").textContent = count + " working days left till March end 🎯";
-    }
-
-    window.onload = countWorkingDaysUntilMarchEnd;
-  </script>
 </head>
 <body>
   <h1>🔥 Plus One Class Hub 🔥</h1>
@@ -48,8 +29,8 @@
   </section>
 
   <section>
-    <h2>📆 School Countdown</h2>
-    <p id="countdown">Calculating...</p>
+    <h2>🎮 Play Game</h2>
+    <a href="games/game.html">Click to Play Snake</a>
   </section>
 </body>
 </html>
